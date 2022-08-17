@@ -1,0 +1,53 @@
+{
+	"identifier": "container-service-infrastructure",
+	"about": {
+		"title": "Simple one-for-one container service inrastructure",
+		"explanation": "Set up the resources a container service needs as standalone resources (i.e not shared with other container services)"
+	},
+	"compute_service": {
+		"identifier": "container_service"
+	},
+	"dimensions": {
+		"cpus": 10,
+		"memory": 256
+	},
+	"ports": [
+		{
+			"container_port": 80,
+			"host_port": 80
+		}
+	],	
+	"binding_target": {
+		"configuration": {
+			"desired_count": 1,
+			"essential": true
+ 		}
+	},
+	"resources": [
+		{
+			"type": "container_task_definition",
+			"identifier": "^^identifier^^"
+		},
+		{
+			"type": "load_balancer",
+			"identifier": "^^identifier^^",
+			"configuration": {
+				"subnets": [
+					"subnet_a",
+			    "subnet_b"
+				],
+				"security_groups": [
+					"security_group"
+				]
+			}
+		},
+		{
+			"type": "load_balancer_target_group",
+			"identifier": "^^identifier^^",
+		},
+		{
+			"type": "load_balancer_listener",
+			"identifier": "^^identifier^^"
+		}
+	]
+}
