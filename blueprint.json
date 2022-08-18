@@ -16,21 +16,15 @@
 			"container_port": 80,
 			"host_port": 80
 		}
-	],	
-	"binding_target": {
-		"configuration": {
-			"desired_count": 1,
-			"essential": true
- 		}
-	},
+	],
 	"resources": [
 		{
 			"type": "container_task_definition",
-			"identifier": "^^identifier^^"
+			"identifier": "^^blueprint_identifier^^"
 		},
 		{
 			"type": "load_balancer",
-			"identifier": "^^identifier^^",
+			"identifier": "^^blueprint_identifier^^",
 			"configuration": {
 				"subnets": [
 					"subnet_a",
@@ -43,11 +37,11 @@
 		},
 		{
 			"type": "load_balancer_target_group",
-			"identifier": "^^identifier^^"
+			"identifier": "^^blueprint_identifier^^"
 		},
 		{
 			"type": "load_balancer_listener",
-			"identifier": "^^identifier^^"
+			"identifier": "^^blueprint_identifier^^"
 		}
 	]
 }
