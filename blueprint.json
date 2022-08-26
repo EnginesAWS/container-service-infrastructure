@@ -25,15 +25,6 @@
 		{
 			"type": "load_balancer",
 			"identifier": "^^blueprint_identifier^^",
-			"configuration": {
-				"subnets": [
-					"subnet_a",
-			    "subnet_b"
-				],
-				"security_groups": [
-					"security_group"
-				]
-			}
 		},
 		{
 			"type": "load_balancer_target_group",
