@@ -25,6 +25,15 @@
 		{
 			"type": "load_balancer",
 			"identifier": "^^blueprint_identifier^^",
+			"configuration": {
+				"subnets": [
+					"public_a",
+			    "public_b"
+				],
+				"security_groups": [
+					"security_group"
+				]
+			}
 		},
 		{
 			"type": "load_balancer_target_group",
@@ -33,6 +42,13 @@
 		{
 			"type": "load_balancer_listener",
 			"identifier": "^^blueprint_identifier^^"
+		},
+		{
+			"type": "route_table_association",
+			"identifier": "^^blueprint_identifier^^",
+			"configuration": {
+				"route_table_binding": "public_a"
+			}
 		}
 	]
 }
