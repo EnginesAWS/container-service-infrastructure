@@ -47,7 +47,14 @@
 			"type": "route_table_association",
 			"identifier": "^^blueprint_identifier^^",
 			"configuration": {
-				"route_table_binding": "public_a"
+				"subnet_binding": "public_a"
+			}
+		},
+		{
+			"type": "route_table_association",
+			"identifier": "^^blueprint_identifier^^",
+			"configuration": {
+				"subnet_binding": "public_b"
 			}
 		}
 	]
