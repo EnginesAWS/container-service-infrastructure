@@ -46,12 +46,10 @@
 		{
 			"type": "route_table_association",
 			"identifier": "public_a"
-			}
 		},
 		{
 			"type": "route_table_association",
 			"identifier": "public_b"
-			}
 		}
 	]
 }
