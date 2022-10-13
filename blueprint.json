@@ -50,6 +50,12 @@
 		{
 			"type": "route_table_association",
 			"identifier": "public_b"
+		},
+		{
+			"type": "dns_record",
+			"configuration": {
+				"type": "CNAME"
+			}
 		}
 	]
 }
