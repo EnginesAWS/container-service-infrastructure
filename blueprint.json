@@ -11,12 +11,6 @@
 		"cpus": 10,
 		"memory": 256
 	},
-	"ports": [
-		{
-			"container_port": 80,
-			"host_port": 80
-		}
-	],
 	"resources": [
 		{
 			"type": "container_task_definition",
