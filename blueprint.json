@@ -38,6 +38,22 @@
 			"identifier": "^^blueprint_identifier^^"
 		},
 		{
+			"type": "subnet",
+			"identifier": "^^blueprint_identifier^^_a",
+			"configuration": {
+				"public": true,
+				"availability_zone": "ap-southeast-2a"
+			}
+		},
+		{
+			"type": "subnet",
+			"identifier": "^^blueprint_identifier^^_b",
+			"configuration": {
+				"availability_zone": "ap-southeast-2b"
+			}
+		},
+		{"type": "route_table"},
+		{
 			"type": "route_table_association",
 			"identifier": "public_a"
 		},
