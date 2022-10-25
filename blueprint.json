@@ -52,7 +52,10 @@
 				"availability_zone": "ap-southeast-2b"
 			}
 		},
-		{"type": "route_table"},
+		{
+			"type": "route_table",
+			"identifier": "^^blueprint_identifier^^"
+		},
 		{
 			"type": "route_table_association",
 			"identifier": "public_a"
