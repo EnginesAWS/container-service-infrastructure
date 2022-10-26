@@ -21,8 +21,8 @@
 			"identifier": "^^blueprint_identifier^^",
 			"configuration": {
 				"subnets": [
-					"public_a",
-			    "public_b"
+					"^^blueprint_identifier^^_a",
+			    "^^blueprint_identifier^^_b"
 				],
 				"security_groups": [
 					"security_group"
@@ -55,11 +55,11 @@
 		{"type": "route_table"},
 		{
 			"type": "route_table_association",
-			"identifier": "public_a"
+			"identifier": "^^blueprint_identifier^^_a"
 		},
 		{
 			"type": "route_table_association",
-			"identifier": "public_b"
+			"identifier": "^^blueprint_identifier^^_b"
 		},
 		{
 			"type": "dns_record",
