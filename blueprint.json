@@ -68,7 +68,7 @@
 			"type": "dns_record",
 			"identifier": "^^blueprint_identifier^^",
 			"configuration": {
-				"type": "CNAME"
+				"type": "A"
 			}
 		}
 	]
